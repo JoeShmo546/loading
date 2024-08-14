@@ -8,7 +8,6 @@
 // date: Oct 13, 2023
 
 // 3 dot loading function
-// takes in "times" which refers to the amount of times the loop executes
 int three_dots(int times){
 
     for(int j = 0; j < times; j++){ // loop repeats "times"x
