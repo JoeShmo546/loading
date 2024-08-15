@@ -10,18 +10,17 @@
 // 3 dot loading function
 int three_dots(int times){
 
-    for(int j = 0; j < times; j++){ // loop repeats "times"x
+    for(int j = 0; j < times; j++){ 
+        for(int i = 0; i < 3; i++){ 
 
-        for(int i = 0; i < 3; i++){ // loop controls each time a "." is printed and when it resets
+            printf(".");    
+            fflush(stdout); 
+            usleep(200000);
 
-            printf(".");    // prints "."
-            fflush(stdout); // clears characters caught in the buffer
-            usleep(200000); // delay
-
-            if(i == 2){        // executes when the 3rd "." is printed (goal: reset "."s)
-                printf("\b\b\b");  // delete the last 3 characters ...
-                printf("   "); // replace all periods with spaces
-                printf("\b\b\b");  // delete the last 3 characters again (necessary over /r for the finish function)
+            if(i == 2){        
+                printf("\b\b\b"); 
+                printf("   "); 
+                printf("\b\b\b");
             }
         }
     }
