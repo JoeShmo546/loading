@@ -28,7 +28,7 @@ int three_dots(int times){
 }
 int bar(){
 
-    int bar_len = 60; // length of the bar
+    int bar_len = 60;
 
     for (int i = 0; i < bar_len; i++){ // loop through the length of the bar
         printf("."); //prints the '.'s
